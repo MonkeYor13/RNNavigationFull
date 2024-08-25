@@ -1,8 +1,14 @@
 import React from "react";
-import Routes from "./Routes";
+import { NavigationContainer } from "@react-navigation/native";
+import MyStack from "./navigacion/MyStack";
+import MyDrawer from "./navigacion/MyDrawer";
 
 export default function App() {
-  return <Routes />;
+  return (
+    <NavigationContainer>
+      <MyDrawer>
+        <MyStack />
+      </MyDrawer>
+    </NavigationContainer>
+  );
 }
-
-
