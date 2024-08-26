@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import HomeScreen from '../screens/HomeScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import DetailsScreen from '../screens/DetailsScreen';
 const Tab = createBottomTabNavigator();
 
 export default function MyTab() {
@@ -23,6 +24,13 @@ export default function MyTab() {
         component={SettingsScreen}
         options={{
           tabBarIcon: ({ color }) => (<MaterialCommunityIcons name='menu' size={24} color={color} />)
+        }}
+      />
+      <Tab.Screen
+        name="Api"
+        component={DetailsScreen}
+        options={{
+          tabBarIcon: ({ color }) => (<MaterialCommunityIcons name='account-box-outline' size={24} color={color} />)
         }}
       />
     </Tab.Navigator>
