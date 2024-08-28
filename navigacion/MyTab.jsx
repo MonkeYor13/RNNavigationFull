@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import HomeScreen from '../screens/HomeScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import DetailsScreen from '../screens/DetailsScreen';
+import MyTextInput from '../screens/MyTextInput';
 const Tab = createBottomTabNavigator();
 
 export default function MyTab() {
@@ -29,6 +30,13 @@ export default function MyTab() {
       <Tab.Screen
         name="Api"
         component={DetailsScreen}
+        options={{
+          tabBarIcon: ({ color }) => (<MaterialCommunityIcons name='account-box-outline' size={24} color={color} />)
+        }}
+      />
+      <Tab.Screen
+        name="Registro"
+        component={MyTextInput}
         options={{
           tabBarIcon: ({ color }) => (<MaterialCommunityIcons name='account-box-outline' size={24} color={color} />)
         }}
