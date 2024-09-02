@@ -12,7 +12,7 @@ export default function DetailsScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get('ttps://jsonplaceholder.typicode.com/photos?_limit=5');
+        const res = await axios.get('ttps://jsonplaceholder.typicode.com/photos?_limit=5'); //fa errro porque le falta el h del http
         setData(res.data);
         setLoading(false)
       } catch (error) {
