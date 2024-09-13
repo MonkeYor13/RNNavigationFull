@@ -25,6 +25,10 @@ export default function HomeScreen({ navigation }) {
         title="Click Aqui!"
         onPress={openMap}
       />
+      <Button
+        title="Mi Flexbox"
+        onPress={() => navigation.navigate('MyFlexbos')}
+      />
     </View>
   )
 }
