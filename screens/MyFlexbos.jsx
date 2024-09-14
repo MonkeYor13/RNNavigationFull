@@ -4,11 +4,10 @@ import React from 'react'
 export default function MyFlexbos() {
   return (
     <View style={styles.container}>
-      <View style={[styles.box, {backgroundColor: 'orange', }]} />
+      <View style={[styles.box, {backgroundColor: 'orange', flex: 1 }]} />
       <View style={[styles.box, {backgroundColor: 'blue', flex: 2}]} />
-      <View style={[styles.box, {backgroundColor: 'red', flex: 2, position: 'absolute', right: 0}]} />
-      <View style={[styles.box, {backgroundColor: 'pink', flex: 2}]} />
-      <View style={[styles.box, {backgroundColor: 'gray', flex: 2}]} />
+      <View style={[styles.box, {backgroundColor: 'red', flex: 1,}]} />
+
     </View>
   )
 }
