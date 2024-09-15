@@ -29,6 +29,10 @@ export default function HomeScreen({ navigation }) {
         title="Mi Flexbox"
         onPress={() => navigation.navigate('MyFlexbos')}
       />
+      <Button
+        title="Mi Reanimated"
+        onPress={() => navigation.navigate('MyReanimated')}
+      />
     </View>
   )
 }
